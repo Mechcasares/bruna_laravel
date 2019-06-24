@@ -30,6 +30,5 @@
                 </a>
         
         </div>
-        <!-- include('layouts.partials.footer') -->
-</div>
+        @include('layouts.partials.footer')
 @endsection
