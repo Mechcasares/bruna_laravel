@@ -1,5 +1,4 @@
 @extends('layouts.master')
-@extends('layouts.app')
 @section('content')
 <main>
     <div class="register-form">
