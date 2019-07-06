@@ -17,6 +17,7 @@ Route::get('/faqs', function(){
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/listadoProductos','productController@index');
 // Route::get('/detalleProducto/{id}','productController@show');
+Route::get('/movies/create', 'MovieController@create')->middleware('admin');
 
 // ABM Productos
 Route::get('/adminProducts','AdminProductController@index');
@@ -37,3 +38,4 @@ Route::get('/deleteSales/{id}','AdminSaleController@delete');
 
 // Detalle Producto 
 Route::get('/detalleProducto/{id}','productController@show');
+

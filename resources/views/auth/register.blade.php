@@ -2,7 +2,7 @@
 @section('content')
 <main>
     <div class="register-form">
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('register') }}" novalidate="novalidate">
             @csrf   
                 <div class="avatar">
                     <img src="img/User-Profile.png" alt="Avatar">
@@ -10,7 +10,7 @@
                 <h2 class="text-center"> {{ __('Register') }} </h2>
 
                 <div class="">
-                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="{{ __('Nombre') }}" value="{{ old('name') }}" required autocomplete="name" autofocus> 
+                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="{{ __('Nombre') }}" value="{{ old('name') }}" required autocomplete="name" autofocus novalidate="novalidate"> 
 
                     @error('name')
                     <span class="invalid-feedback" role="alert">
@@ -21,7 +21,7 @@
                 
                 <br>
                 <div class="form-group">
-                    <input id="email" type="email" class="form-control @error ('email') invalido @enderror" name="email" placeholder={{ __('Email') }} required autocomplete="email" value="{{ old('email') }}"> 
+                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder= "{{ __('Email') }}" required autocomplete="email" value="{{ old('email') }}" novalidate="novalidate"> 
                     @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
