@@ -6,15 +6,35 @@
         <div class="avatar">
             <img src="img/User-Profile.png" alt="Avatar">
         </div>
-        <h2 class="text-center"> LOGIN</h2>
+        
+        <h2 class="text-center"> {{ __('Login') }}</h2>
+        
+        <form method="POST" action="{{ route('login') }}">
+        
+        @csrf
+        
         <div class="form-group">
-            <input type="text" class="form-control" name="email" placeholder="Email" required="required">
+            <input id= "email" type="text" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="Email" value="{{ old('email') }}" required autofocus>
+
+            @if ($errors->has('email'))
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->first('email') }}</strong>
+            </span>
+            @endif
         </div>
+        
         <div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">
+            <input type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" " name="password" placeholder="Contraseña" required="required">
+
+            @if ($errors->has('password'))
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->first('password') }}</strong>
+            </span>
+            @endif
         </div>
+
         <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Logeate</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">{{ __('Login') }}</button>
         </div>
         <div class="clearfix">
             <label class="pull-left checkbox-inline"><input type="checkbox"> Recordarme</label>
@@ -30,3 +50,6 @@
 </div>
 </main>
 @endsection
+
+
+
