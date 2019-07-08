@@ -6,15 +6,15 @@
     <div class="__productos row">
       <div class="d-flex card col-12  __itempelicula" style="width: 18rem;">
         <ul>
-            @foreach ($productos as $producto)
+            @foreach ($products as $product)
                 <li>
-                    <a href="/detalleProducto/{{$producto->id}}">{{$producto->name}}</a> 
+                    <a href="/detailProduct/{{$product->id}}">{{$product->name}}</a> 
                             
                 </li>
             @endforeach     
         </ul>
         <p>
-            {{$productos->links()}}
+            {{$products->links()}}
         </p>
         
         

@@ -15,9 +15,9 @@ Route::get('/faqs', function(){
 
 
 Route::get('/home', 'HomeController@index')->name('home');
-// Route::get('/listadoProductos','productController@index');
-// Route::get('/detalleProducto/{id}','productController@show');
-Route::get('/movies/create', 'MovieController@create')->middleware('admin');
+Route::get('/listProducts','productController@index');
+Route::get('/detailProduct/{id}','productController@show');
+//Route::get('/movies/create', 'MovieController@create')->middleware('admin');
 
 // ABM Productos
 Route::get('/adminProducts','AdminProductController@index');

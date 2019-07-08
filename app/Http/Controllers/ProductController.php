@@ -8,14 +8,14 @@ use App\Product;
 class ProductController extends Controller
 {
     public function index(){
-        $productos = Product::paginate(5);
+        $products = Product::paginate(5);
         return view('product')
-        ->with('productos', $productos);
+        ->with('products', $products);
     }
 
     public function show($id){
-        $detalle = Product::find($id);
-        return view('detailproduct')
-        ->with('detalle', $detalle);
+        $detail = Product::find($id);
+        return view('products.detail')
+        ->with('detail', $detail);
     }
 }

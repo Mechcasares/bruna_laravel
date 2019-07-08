@@ -16,15 +16,15 @@
             </tr>
         </thead>
         <tbody>
-                @foreach ($productos as $producto)
+                @foreach ($products as $product)
                 <tr>
-                <td>{{$producto->id}}</td>
-                    <td>{{$producto->name}}</td>
+                <td>{{$product->id}}</td>
+                    <td>{{$product->name}}</td>
                     
                 
-                    <td><a href="/showProduct/{{$producto->id}}">Ver</a></td>
-                    <td><a href="/editProduct/{{$producto->id}}">Editar</a></td>    
-                    <td><a href="/deleteProduct/{{$producto->id}}">Eliminar</a></td>
+                    <td><a href="/detailProduct/{{$product->id}}">Ver</a></td>
+                    <td><a href="/editProduct/{{$product->id}}">Editar</a></td>    
+                    <td><a href="/deleteProduct/{{$product->id}}">Eliminar</a></td>
                 </tr>
                 @endforeach
         </tbody>

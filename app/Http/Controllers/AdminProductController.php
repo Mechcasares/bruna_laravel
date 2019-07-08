@@ -10,13 +10,13 @@ class AdminProductController extends Controller
 {
 
     public function index(){
-        $productos = Product::all();
-        return view('products.index')->with('productos',$productos);
+        $products = Product::all();
+        return view('products.index')->with('products',$products);
     }
 
     public function create(){
-        $categorias = Category::all();
-        return view('products.create')->with('categorias',$categorias);
+        $categories = Category::all();
+        return view('products.create')->with('categories',$categories);
     }
 
     public function save(Request $request){
@@ -33,8 +33,10 @@ class AdminProductController extends Controller
         ];
 
         $this->validate($request,$reglas,$mensajes);
-        $producto = new Product($request->all());
-        $producto->save();
+        $product = new Product($request->all());
+        
+
+        $product->save();
         return redirect('/adminProducts');
         
     }
