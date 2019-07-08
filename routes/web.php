@@ -15,13 +15,16 @@ Route::get('/faqs', function(){
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
 Route::get('/listProducts','productController@index');
 Route::get('/detailProduct/{id}','productController@show');
-//Route::get('/movies/create', 'MovieController@create')->middleware('admin');
 
 // ABM Productos
+
 Route::get('/adminProducts','AdminProductController@index');
 Route::get('/createProduct','AdminProductController@create');
+Route::get('/editProduct/{id}', 'AdminProductController@save');
 Route::post('/saveProduct','AdminProductController@save');
 Route::get('/deleteProduct/{id}','AdminProductController@delete');
 

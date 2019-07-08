@@ -11,7 +11,7 @@
                         <a href="#">NOSOTROS</a>
                         <a href="#">CONTACTO</a> 
                         @if(auth()->user() && auth()->user()->role == 9)     
-                        <a class="nav-link" href="/backoffice">Administrar</a>
+                        <a class="nav-link" href="/adminProducts">Administrar</a>
                         @endif
                     </li>
                 </ul>
