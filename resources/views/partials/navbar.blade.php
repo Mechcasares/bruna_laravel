@@ -10,6 +10,9 @@
                         <a href="/cart">PRODUCTOS</a>
                         <a href="#">NOSOTROS</a>
                         <a href="#">CONTACTO</a> 
+                        @if(auth()->user() && auth()->user()->role == 9)     
+                        <a class="nav-link" href="/backoffice">Administrar</a>
+                        @endif
                     </li>
                 </ul>
             </nav>
@@ -24,8 +27,9 @@
         <article class="col-12 col-md-12 col-lg-12">
             <a href="#"><i class="fa fa-heart"></i></a>
             <a href="#"><i class="fa fa-search"></i></a> 
-            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>            
             
+
             @guest
             <a href="/login"><i class="fa fa-user"></i></a>
             @else
@@ -38,6 +42,8 @@
             @csrf
             </form>
             @endguest
+
+
         </article>
     </section>
 
