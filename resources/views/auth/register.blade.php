@@ -2,15 +2,15 @@
 @section('content')
 <main>
     <div class="register-form">
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('register') }}" novalidate="novalidate">
             @csrf   
                 <div class="avatar">
                     <img src="img/User-Profile.png" alt="Avatar">
                 </div>
-                <h2 class="text-center"> {{ __('REGISTRO') }} </h2>
+                <h2 class="text-center"> {{ __('Register') }} </h2>
 
                 <div class="">
-                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="nombre" placeholder="{{ __('Nombre') }}" value="{{ old('name') }}" required autocomplete="name" autofocus> 
+                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="{{ __('Nombre') }}" value="{{ old('name') }}" required autocomplete="name" autofocus novalidate="novalidate"> 
 
                     @error('name')
                     <span class="invalid-feedback" role="alert">
@@ -18,9 +18,10 @@
                     </span>
                     @enderror
                 </div>
+                
                 <br>
                 <div class="form-group">
-                    <input id="email" type="email" class="form-control @error ('email') invalido @enderror" name="email" placeholder={{ __('Email') }} required autocomplete="email" value="{{ old('email') }}"> 
+                    <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder= "{{ __('Email') }}" required autocomplete="email" value="{{ old('email') }}" novalidate="novalidate"> 
                     @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -28,9 +29,6 @@
                     @enderror
                 </div>
 
-                <div class="form-group">
-                    <input type="text" class="form-control" name="phone" placeholder="Telefono" required="required" value="">
-                </div>
 
                 <div class="form-group">
                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"  name="password" placeholder="{{ __('Contraseña') }}" required autocomplete="new-password">

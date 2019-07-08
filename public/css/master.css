@@ -329,14 +329,14 @@ li a:hover {
 /* carrito */
 
 .principalcarrito {
-  background-color: #8b8e94;
+  background-color:#efefef80;
   text-align: center;
   display: flex;
   justify-content: center;
 
 }
 .seccion1carrito {
-  margin-top: -30px;
+  margin-top: 20px;
   max-width: 1200px;
   justify-content: center;
 
@@ -350,7 +350,7 @@ li a:hover {
   height: 15em;
 }
 .titulocarrito {
-  font-size: 1.5em;
+  font-size: 5em;
   color: #000; 
   font-weight: bold;    
 }
