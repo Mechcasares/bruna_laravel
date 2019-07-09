@@ -4,7 +4,7 @@
     <h2 class="__product">Listado de Productos</h2>
 
     <div class="__product row">
-      <div class="d-flex card col-12  __itemproduct" style="width: 18rem;">
+      <div class="__itemproduct" style="width: 18rem;">
         <ul>
             @foreach ($products as $product)
                 <li>

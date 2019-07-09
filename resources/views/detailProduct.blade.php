@@ -1,11 +1,10 @@
 @extends('layouts.master')
-
 @section('content')
 <main>
-    <h2 class="__producto">Detalle del Producto</h2>
+    <h2 class="__product">Detalle del Producto</h2>
 
-    <div class="__productos row">
-      <div class="d-flex card col-12  __itemproducto">
+    <div class="__product">
+      <div class=" __itemproduct">
         
         <div>
             Nombre: {{$detail->name}}
@@ -13,7 +12,11 @@
             Precio: {{$detail->price}}
             <br>
             Descripción: {{$detail->description}}
-          
+            <br>
+            @if($detail->photopath !== null)
+            <img src="/storage/{{ $detail->photopath }}" alt="pp">
+            @endif
+            <br>
         </div>
         <a href="/listProducts">Volver</a>    
      

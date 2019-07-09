@@ -18,15 +18,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/listProducts','productController@index');
-Route::get('/detailProduct/{id}','productController@show');
+/*Route::get('/detailProduct/{id}','productController@show');*/
 
 // ABM Productos
 
 Route::get('/adminProducts','AdminProductController@index');
 Route::get('/createProduct','AdminProductController@create');
-Route::get('/editProduct/{id}', 'AdminProductController@save');
 Route::post('/saveProduct','AdminProductController@save');
 Route::get('/deleteProduct/{id}','AdminProductController@delete');
+Route::get('/detailProduct/{id}','productController@show');
+Route::get('/editProduct/{id}', 'AdminProductController@edit');
+Route::patch('/editProduct/{id}', 'AdminProductController@update');
 
 // Compra Productos - Cart
 
