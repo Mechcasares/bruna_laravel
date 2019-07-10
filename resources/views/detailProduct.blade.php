@@ -1,10 +1,9 @@
 @extends('layouts.master')
 @section('content')
 <main>
-    <h2 class="__product">Detalle del Producto</h2>
-
-    <div class="__product">
-      <div class=" __itemproduct">
+    <h2 >Detalle del Producto</h2>
+    <div >
+      <div >
         
         <div>
             Nombre: {{$detail->name}}
