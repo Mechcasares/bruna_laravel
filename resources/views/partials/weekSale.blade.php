@@ -12,7 +12,7 @@
     <div class="titleContainer">
       <h2 class="wsTitle2"> SHOP EN INSTAGRAM</h2>
       <p class="wsSubtitle2">comparti tus home #goals usando el hashtag #BRUNAdesign y etiquetanos para aparecer en nuestro sitio!</p>
-      <p class="wsSubtitle2"><i class="fa fa-instagram" id="igIcon"></i></p>
+      <p class="wsSubtitle2"><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram" id="igIcon"></i></a></p>
     </div>
   </div>
 </div>

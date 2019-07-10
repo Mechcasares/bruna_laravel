@@ -7,7 +7,7 @@
                 <ul>
                     <li class="links">
                         <a href="/">HOME</a>
-                        <a href="/cart">PRODUCTOS</a>
+                        <a href="/cart" class="products">PRODUCTOS</a>
                         <a href="#">NOSOTROS</a>
                         <a href="#">CONTACTO</a> 
                       <!--   @if(auth()->user() && auth()->user()->role == 9)     
@@ -20,7 +20,7 @@
     </section>
         
     <section class="logo">
-        <a href="/"><img src="img/bruna.png"></a>
+        <a href="/"><img src="{{asset('img/bruna.png')}}"></a>
     </section>
 
     <section class="icon-bar">
@@ -48,16 +48,10 @@
 
 
 </section>
-<div class="openMenu">
-  <!-- <ul>
-    <li> <a class="menuOptions" href="#">Sillones</a></li>
-    <li> <a class="menuOptions" href="#">Sillas</a></li>
-    <li> <a class="menuOptions" href="#">Mesas</a></li>
-    <li> <a class="menuOptions" href="#">Accesorios</a></li>
-  </ul> -->
-  <div class="sillones">SILLONES</div>
-  <div class="sillas">SILLAS</div>
-  <div class="mesas">MESAS</div>
-  <div class="acces">ACCESORIOS</div>
+<div class="openMenu" id="menu">
+  <div id="menuOption"class="sillones"><p class="menuOptionP">SILLONES</p></div>
+  <div id="menuOption"class="sillas"><p class="menuOptionP">SILLAS</p></div>
+  <div id="menuOption"class="mesas"><p class="menuOptionP">MESAS</p></div>
+  <div id="menuOption"class="acces"><p class="menuOptionP">ACCESORIOS</p></div>
   
 </div>
