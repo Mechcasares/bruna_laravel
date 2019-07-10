@@ -5,7 +5,7 @@
 }
 
 html {
-    background: #F2F2F2;
+    background: white;
 }
 
 body {
@@ -39,16 +39,16 @@ nav {
     margin: 1em 0 0;
 }
 
-header ul li {
+ ul li {
     display: inline;
     padding: 0 1em 0 0;
     font-size: 0.8em;
 }
-
-header ul li a {
+ ul li a {
     text-decoration: none;
     color: rgb(111,110,114);
     padding-left: 14px;
+    list-style: none
 }
 
 li a.active {
