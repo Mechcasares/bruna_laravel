@@ -558,7 +558,6 @@ th, td {
 }
 /*admin productos*/
 
-
 /* detalle producto */
 .detailTitle{
   margin: 2rem
@@ -599,8 +598,47 @@ th, td {
   color: rgba(111,110,114, 0.5)
 }
 
-
 /*detalle producto*/
+
+/*editar producto*/
+.editContainer{
+  background: white;
+  margin: 1rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+.editTitle {
+  background-color:rgb(111,110,114);
+  text-align: center;
+  width: 100%;
+  margin: 1rem
+}
+
+.editar{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+}
+.btnContainer {
+  text-align: center;
+  margin: 0.8rem
+}
+.btnSave{
+  border: 0;
+  background: rgb(111,110,114);
+  color: white;
+  padding: 0.7rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/*editar producto*/
+
 
 .green {
   background: #85ad00; }

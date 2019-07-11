@@ -1,8 +1,11 @@
 @extends('layouts.master') 
 @section('content')
 
-<div class="col-7 offset-1">
-    <h3 class="">Editar Producto</h3>
+<div class="detailProduct">
+  <div class="editContainer">
+    <div class="editTitle">
+      <h1 class="editar" >EDITAR PRODUCTO</h3>
+    </div>
     <h2>{{ $product->name }}</h2>
     @if (count($errors) > 0)
     <div class="alert alert-danger">
@@ -40,9 +43,10 @@
         </select>
         </div>
 
-        <div class="form-group">
-            <input type="submit" class="btn btn-danger" value="Confirmar Cambios">
+        <div class="btnContainer">
+            <input type="submit" class="btnSave" value="CONFIRMAR CAMBIOS">
         </div>
     </form>
+    </div>
 </div>
 @endsection
