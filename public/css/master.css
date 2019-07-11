@@ -637,7 +637,21 @@ th, td {
   font-weight: 600;
   font-size: 0.8rem;
 }
+.agregarContainer{
+  background: white;
+  margin: 1rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
 
+}
+.agregarProducto {
+  display: flex;
+  flex-direction: column;
+
+}
 /*editar producto*/
 
 

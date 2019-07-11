@@ -1,16 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
-  <section class="principal">
-       <article class="nuevos" id="products">
-           <div class="productos">
-
+  <section class="detailProduct">
+       <article class="agregarContainer" >
+      <div class="editTitle"> <h2 class="editar">NUEVO PRODUCTO</h2> </div> 
+       <div class="agregarProducto">
              <form  action="/saveProduct" method="POST" enctype="multipart/form-data">
               @csrf
-               <h2 class="__productonuevo">Nuevo Producto</h2>
-               <br>
-              
-               <br>
                <div class="form-row">
                 <div  class="form-group col-4 offset-4 ">
                   
@@ -51,12 +47,12 @@
                     <label for="img">Imagen</label>
                     <input class="form-control" type="file" name="photopath">
                 </div>
-        
-                <div class="form-group col-4 offset-4">
-                    <input type="submit" class="btn btn-primary" value="Agregar Producto">
-                </div>
+                
             </div>
             </form>
+            <div class="btnContainer">
+                    <input type="submit" class="btnSave" value="Agregar Producto">
+                </div>
 
           </div>
       </article>
