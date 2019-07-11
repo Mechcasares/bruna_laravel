@@ -530,11 +530,47 @@ li a:hover {
 }
 
 /* detalle producto */
+.detailTitle{
+  margin: 2rem
+}
 .detailProduct {
   display: flex;
-  flex-direction: column;
-  align-items: center
+  width: 100%;
+  background-color: #FCCDAB;
+  justify-content: center;
+  align-content: center
 }
+.detailContainer {
+  background: white;
+  margin: 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: 
+
+}
+
+.info{
+  display: flex;
+  flex-direction: row
+}
+.productImage, .productInfo {
+  width: 50%
+}
+
+.backButton {
+  font-size: 2rem;
+  color: rgb(111,110,114);
+  margin-top: 2rem
+}
+.backButton:hover {
+
+  color: rgba(111,110,114, 0.5)
+}
+
+
+/*detalle producto*/
 
 .green {
   background: #85ad00; }

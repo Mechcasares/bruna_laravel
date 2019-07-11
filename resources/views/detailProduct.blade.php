@@ -1,27 +1,27 @@
 @extends('layouts.master')
 @section('content')
 <main class="detailProduct">
-  <div>
-    <h2 >Detalle del Producto</h2>
+  <div class="detailContainer">
+  <div class="detailTitle">
+    <h1>DETALLE DE PRODUCTO</h1>
   </div>  
-  <div>
-      <div>
-        <div>
-            Nombre: {{$detail->name}}
-            <br>
-            Precio: {{$detail->price}}
-            <br>
-            Descripción: {{$detail->description}}
-            <br>
-            @if($detail->photopath !== null)
-            <img src="storage/{{ $detail->photopath }}" alt="pp">
-            @endif
-            <br>
-        </div>
-        <a href="/adminProducts">Volver</a>    
-     
-      </div>
+
+  <div class="info">
+    <div class="productImage">
+      @if($detail->photopath !== null)
+      <img src="storage/{{ $detail->photopath }}" alt="pp">
+      @endif
     </div>
+    <div class="productInfo">
+      <h6>Nombre: {{$detail->name}} </h6>       
+      <h6>Precio: {{$detail->price}}</h6>
+      <h6>Descripción: {{$detail->description}}  </h6>  
+    </div>
+  </div>
+  <div class="detailTitle">
+      <a href="/adminProducts" class="backButton">VOLVER</a> 
+  </div>
+  </div>
 </main>   
 @endsection
 
