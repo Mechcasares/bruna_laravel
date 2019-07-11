@@ -2,10 +2,9 @@
 <section class="container">
 		
     <section class="navbarright">
-        <article class="col-12 col-md-12 col-lg-12">
-            <nav>
-                <ul>
-                    <li class="links">
+
+                <div class="linksContainer">
+                    <div class="links">
                         <a href="/">HOME</a>
                         <a href="/cart" class="products">PRODUCTOS</a>
                         <a href="#">NOSOTROS</a>
@@ -13,10 +12,9 @@
                       <!--   @if(auth()->user() && auth()->user()->role == 9)     
                         <a class="nav-link" href="/adminProducts">ADMIN</a>
                         @endif -->
-                    </li>
-                </ul>
-            </nav>
-        </article>
+                    </div>
+                </div>
+       
     </section>
         
     <section class="logo">
@@ -48,10 +46,11 @@
 
 
 </section>
-<div class="openMenu" id="menu">
-  <div id="menuOption"class="sillones"><p class="menuOptionP">SILLONES</p></div>
-  <div id="menuOption"class="sillas"><p class="menuOptionP">SILLAS</p></div>
-  <div id="menuOption"class="mesas"><p class="menuOptionP">MESAS</p></div>
-  <div id="menuOption"class="acces"><p class="menuOptionP">ACCESORIOS</p></div>
-  
+<div class="dropdown">
+  <div class="openMenu" id="menu">
+    <div id="menuOption"class="sillones"><p class="menuOptionP">SILLONES</p></div>
+    <div id="menuOption"class="sillas"><p class="menuOptionP">SILLAS</p></div>
+    <div id="menuOption"class="mesas"><p class="menuOptionP">MESAS</p></div>
+    <div id="menuOption"class="acces"><p class="menuOptionP">ACCESORIOS</p></div>
+  </div>
 </div>

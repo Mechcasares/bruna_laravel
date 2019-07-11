@@ -35,29 +35,35 @@ body {
     padding-left: 3em;
 }
 
-nav {
+.linksContainer {
     margin: 1em 0 0;
+    height: 100%;
+}
+.links {
+  height: 100%;
 }
 
- ul li {
-    display: inline;
+ .linksContainer .links {
+    display: flex;
+    flex-direction: row;
     padding: 0 1em 0 0;
     font-size: 0.8em;
+    
 }
- ul li a {
+ .linksContainer .links a {
     text-decoration: none;
     color: rgb(111,110,114);
     padding-left: 14px;
     list-style: none
 }
 
-li a.active {
+.links a.active {
     color: rgb(111,110,114);
     border-bottom: 2px solid rgb(111,110,114);
     font-weight: 300;
 }
 
-li a:hover {
+.links a:hover {
     color: #B6B6B6;
 }
 
@@ -146,6 +152,10 @@ li a:hover {
   padding-right: 7.3rem;
 }
 
+.show {
+  display: flex;
+}
+
 .sillas{
   background-image: url('../img/SILLASMENU.JPG');
   width: 25%;
@@ -190,7 +200,8 @@ li a:hover {
 .menuOptionP {
   font-family: 'Abril Fatface', cursive;
   color: white;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem
 }
 
 .menuOptions {
