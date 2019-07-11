@@ -1,18 +1,20 @@
 @extends('layouts.master')
 @section('content')
-    <h2 class="__ABMProductos">ABM de Productos</h2>
-    <br>
-    <a href="/createProduct">Agregar Producto</a>    
+<div class="adminProducts">
+  <div class="adminProductsContainer">
+    <div class="detailTitle">
+    <h2>ABM DE PRODUCTOS</h2>
+    </div>
+    <a class="productsBtns" href="/createProduct">AGREGAR PRODUCTO +</a>    
     <br>
     <table class="table">
         <thead>
             <tr>
                 <th>#</th>
-                <th>Nombre del Producto</th>
-               
-                <th>Ver</th>
-                <th>Editar</th>
-                <th>Eliminar</th>
+                <th>NOMBRE DEL PRODUCTO</th>
+                <th>VER</th>
+                <th>EDITAR</th>
+                <th>ELIMINAR</th>
             </tr>
         </thead>
         <tbody>
@@ -22,11 +24,13 @@
                     <td>{{$product->name}}</td>
                     
                 
-                    <td><a href="/detailProduct/{{$product->id}}">Ver</a></td>
-                    <td><a href="/editProduct/{{$product->id}}">Editar</a></td>    
-                    <td><a href="/deleteProduct/{{$product->id}}">Eliminar</a></td>
+                    <td><a class="productsBtns" href="/detailProduct/{{$product->id}}"><i class="fa fa-eye"></i></a></td>
+                    <td><a class="productsBtns" href="/editProduct/{{$product->id}}"><i class="fa fa-edit"></i></a></td>    
+                    <td><a class="productsBtns" href="/deleteProduct/{{$product->id}}"><i class="fa fa-trash"></i></a></td>
                 </tr>
                 @endforeach
         </tbody>
     </table>
+    </div>
+    </div>
 @endsection
