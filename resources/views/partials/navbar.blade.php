@@ -3,7 +3,7 @@
 		
     <section class="navbarright">
 
-                <div class="linksContainer">
+                <div class="linksContainer" style="padding-top: 4px;">
                     <div class="links">
                         <a href="/">HOME</a>
                         <a href="/cart" class="products">PRODUCTOS</a>
@@ -22,7 +22,7 @@
     </section>
 
     <section class="icon-bar">
-        <article class="col-12 col-md-12 col-lg-12">
+        <article class="col-12 col-md-12 col-lg-12 text-right">
             <a href="#"><i class="fa fa-heart"></i></a>
             <a href="#"><i class="fa fa-search"></i></a> 
             @if(auth()->user() && auth()->user()->role == 9)     

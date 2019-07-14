@@ -1,347 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    background: white;
+  background: white;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;;
-    font-size: 0.9em;
-    color:rgb(111,110,114);
-    max-width: 1920px;
-    background: white;
-    margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  color:rgb(111,110,114);
+  max-width: 1920px;
+  background: white;
+  margin: auto;
 }
 
 
 /*Navbar*/
 
 .container {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 1.5rem;
 }
 
 .logo img {
-    width: 55%;    
-    padding-left: 3em;
+width: 50%;
+padding-left: 3em;
+margin-left: 4rem;
 }
 
 .linksContainer {
-    margin: 1em 0 0;
-    height: 100%;
-}
-.links {
+  margin: 1em 0 0;
   height: 100%;
 }
-
- .linksContainer .links {
-    display: flex;
-    flex-direction: row;
-    padding: 0 1em 0 0;
-    font-size: 0.8em;
-    
+.links {
+height: 100%;
 }
- .linksContainer .links a {
-    text-decoration: none;
-    color: rgb(111,110,114);
-    padding-left: 14px;
-    list-style: none
+
+.linksContainer .links {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1em 0 0;
+  font-size: 0.8em;
+  
+}
+.linksContainer .links a {
+  text-decoration: none;
+  color: rgb(111,110,114);
+  padding-left: 14px;
+  list-style: none
 }
 
 .links a.active {
-    color: rgb(111,110,114);
-    border-bottom: 2px solid rgb(111,110,114);
-    font-weight: 300;
+  color: rgb(111,110,114);
+  border-bottom: 2px solid rgb(111,110,114);
+  font-weight: 300;
 }
 
 .links a:hover {
-    color: #B6B6B6;
+  color: #B6B6B6;
 }
 
 .icon-bar {
-   justify-content: center;
+ justify-content: center;
 }
 
 .icon-bar a i {
-    width: 10%;
-    padding: 16px;
-    padding-left: 12px;
-    color:rgb(111,110,114);
-    font-size: 1.5em;
+  width: 10%;
+  padding: 16px;
+  padding-left: 10px;
+  color:rgb(111,110,114);
+  font-size: 1.5em;
+}
+
+.icon-bar i:hover {
+  color: rgb(111,110,114,0.5);
+}
+
+@media only screen and (max-width: 800px) {
+  .navbarright {
+    display: none
   }
-
-  .icon-bar i:hover {
-    color: rgb(111,110,114,0.5);
+  .icon-bar {
+    display: none
   }
-  
-  @media only screen and (max-width: 800px) {
-    .navbarright {
-      display: none
-    }
-    .icon-bar {
-      display: none
-    }
-  }
-
-  /*Footer*/
-
-
-.container-fluid{
-    font-family: 'Montserrat', sans-serif;
-    background-color: white;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-    
-}
-
-.row h5{
-    color:rgb(111,110,114);
-    font-size: 0.9em;
-
-}
-
-.row a{
-    text-decoration: none;
-    color: rgb(111,110,114,0.9);
-    font-size: 0.7em;
-    font-weight: 100;
-
-}
-
-.row p{
-    text-decoration: none;
-    color: rgb(111,110,114,0.9);
-    font-size: 0.7em;
-    font-weight: 100;
-}
-
-.row a:hover{
-    color: rgb(111,110,114);
-    border-bottom: 0.1em solid rgb(111,110,114);
-}
-
-.footer-copyright{
-    background-color: rgb(111,110,114); 
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 0.6em;
-}
-
-.openMenu{
-  background-color: rgb(111,110,114);;
-  z-index: 9;
-  height: 30vh;
-  display: none;
-  margin-top: -1rem;
-  flex-direction: row;
-  justify-content: space-between;
-  color: white;
-  padding-left: 7.3rem;
-  padding-right: 7.3rem;
-}
-
-.show {
-  display: flex;
-}
-
-.sillas{
-  background-image: url('../img/SILLASMENU.JPG');
-  width: 25%;
-  background-size: cover;
-  background-position: center;
-  margin: 0.5rem
-
-}
-.sillones{
-  background-image: url('../img/SILLONESMENU.JPG');
-  width: 25%;
-  background-size: cover;
-  background-position: center;
-  margin: 0.5rem
-}
-.mesas{
-  background-image: url('../img/MESASMENU.JPG');
-  width: 25%;
-  background-size: cover;
-  background-position: center;
-  margin: 0.5rem
-}
-.acces{
-  background-image: url('../img/ACCESORIOSMENU.JPG');
-  width: 25%;
-  background-size: cover;
-  background-position: center;
-  margin: 0.5rem
-}
-
-#menuOption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer
-}
-
-#menuOption:hover {
-  margin: 0
-}
-
-.menuOptionP {
-  font-family: 'Abril Fatface', cursive;
-  color: white;
-  font-size: 1.5rem;
-  letter-spacing: 0.5rem
-}
-
-.menuOptions {
-  
-  color: white
-}
-/*log-in*/
-
-.form-control {
-    min-height: 41px;
-    background: #fff;
-    box-shadow: none !important;
-    border-color: #e3e3e3;
-}
-.form-control:focus {
-    border-color:  rgb(111,110,114);
-}
-.form-control, .btn {        
-    border-radius: 2px;
-}
-.login-form {
-    width: 350px;
-    margin: 0 auto;
-    padding: 100px 0 30px;		
-}
-.login-form form {
-    color:  rgb(111,110,114);
-    border-radius: 2px;
-    margin-bottom: 15px;
-    font-size: 13px;
-    background: rgba(111,110,114,0.2);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    padding: 30px;	
-    position: relative;	
-}
-.login-form h2 {
-    font-size: 22px;
-    margin: 35px 0 25px;
-}
-.login-form .avatar {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: -50px;
-    width: 95px;
-    height: 95px;
-    border-radius: 50%;
-    z-index: 9;
-    background:  rgb(111,110,114);
-    padding: 20px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-}
-.login-form .avatar img {
-    width: 100%;
-}	
-.login-form input[type="checkbox"] {
-    margin-top: 2px;
-}
-.login-form .btn {        
-    font-size: 1em;
-    font-weight: bold;
-    background: rgb(111,110,114);
-    border: none;
-    margin-bottom: 20px;
-}
-.login-form .btn:hover, .login-form .btn:focus {
-    background:  rgba(111,110,114,0.7);
-}    
-.login-form a {
-    color:  rgb(111,110,114);
-    text-decoration: underline;
-    
-}
-.login-form a:hover {
-    text-decoration: none;
-}
-.login-form form a {
-    color:  rgb(111,110,114);
-    text-decoration: none;
-}
-.login-form form a:hover {
-    text-decoration: underline;
-}
-
-/* detail product */
-
-/* FAQs */
-
-.principal-g {
-  text-align: center;
-  font-size: 1em;
-  color: rgb(161, 159, 159);
- 
-}
-
-.titulo-faqs {
-  font-size: 1em;
-  margin: 1em;
-  color: grey;
-}
-
-.container-g {
-  display: flex;
-  justify-content: center;
-}
-
-.seccion1 {
-  display: flex;
-  width: 40%;
-  max-width: 1400px;
-  justify-content: center;
-}
-
-.ask {
- text-align: left;
- padding: 0.70em;
-}
-
-.pie {
-  justify-content: baseline;
-  height: 10%;
-}
-
-.lineh-g {
-  width: 60%;
-}
-
-.endfaqs {
-  font-size: 1em;
-  font-weight: bold;
-  margin: 1em;
-}
-
-
-.button-g {
-  font-size: 1em;
-  width: 40%;
-  color: white;
-  background-color: grey;
 }
 
 /*Footer*/
@@ -391,314 +140,589 @@ body {
   font-size: 0.6em;
 }
 
+.openMenu{
+background-color: rgb(111,110,114);;
+z-index: 9;
+height: 30vh;
+display: none;
+margin-top: -1rem;
+flex-direction: row;
+justify-content: space-between;
+color: white;
+padding-left: 7.3rem;
+padding-right: 7.3rem;
+}
+
+.show {
+display: flex;
+}
+
+.sillas{
+background-image: url('../img/SILLASMENU.JPG');
+width: 25%;
+background-size: cover;
+background-position: center;
+margin: 0.5rem
+
+}
+.sillones{
+background-image: url('../img/SILLONESMENU.JPG');
+width: 25%;
+background-size: cover;
+background-position: center;
+margin: 0.5rem
+}
+.mesas{
+background-image: url('../img/MESASMENU.JPG');
+width: 25%;
+background-size: cover;
+background-position: center;
+margin: 0.5rem
+}
+.acces{
+background-image: url('../img/ACCESORIOSMENU.JPG');
+width: 25%;
+background-size: cover;
+background-position: center;
+margin: 0.5rem
+}
+
+#menuOption {
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer
+}
+
+#menuOption:hover {
+margin: 0
+}
+
+.menuOptionP {
+font-family: 'Abril Fatface', cursive;
+color: white;
+font-size: 1.5rem;
+letter-spacing: 0.5rem
+}
+
+.menuOptions {
+
+color: white
+}
+/*log-in*/
+
+.form-control {
+  min-height: 41px;
+  background: #fff;
+  box-shadow: none !important;
+  border-color: #e3e3e3;
+}
+.form-control:focus {
+  border-color:  rgb(111,110,114);
+}
+.form-control, .btn {        
+  border-radius: 2px;
+}
+.login-form {
+  width: 350px;
+  margin: 0 auto;
+  padding: 100px 0 30px;		
+}
+.login-form form {
+  color:  rgb(111,110,114);
+  border-radius: 2px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  background: rgba(111,110,114,0.2);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;	
+  position: relative;	
+}
+.login-form h2 {
+  font-size: 22px;
+  margin: 35px 0 25px;
+}
+.login-form .avatar {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -50px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  z-index: 9;
+  background:  rgb(111,110,114);
+  padding: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.login-form .avatar img {
+  width: 100%;
+}	
+.login-form input[type="checkbox"] {
+  margin-top: 2px;
+}
+.login-form .btn {        
+  font-size: 1em;
+  font-weight: bold;
+  background: rgb(111,110,114);
+  border: none;
+  margin-bottom: 20px;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+  background:  rgba(111,110,114,0.7);
+}    
+.login-form a {
+  color:  rgb(111,110,114);
+  text-decoration: underline;
+  
+}
+.login-form a:hover {
+  text-decoration: none;
+}
+.login-form form a {
+  color:  rgb(111,110,114);
+  text-decoration: none;
+}
+.login-form form a:hover {
+  text-decoration: underline;
+}
+
+/* detail product */
+
+/* FAQs */
+
+.principal-g {
+text-align: center;
+font-size: 1em;
+color: rgb(161, 159, 159);
+
+}
+
+.titulo-faqs {
+font-size: 1em;
+margin: 1em;
+color: grey;
+}
+
+.container-g {
+display: flex;
+justify-content: center;
+}
+
+.seccion1 {
+display: flex;
+width: 40%;
+max-width: 1400px;
+justify-content: center;
+}
+
+.ask {
+text-align: left;
+padding: 0.70em;
+}
+
+.pie {
+justify-content: baseline;
+height: 10%;
+}
+
+.lineh-g {
+width: 60%;
+}
+
+.endfaqs {
+font-size: 1em;
+font-weight: bold;
+margin: 1em;
+}
+
+
+.button-g {
+font-size: 1em;
+width: 40%;
+color: white;
+background-color: grey;
+}
+
+/*Footer*/
+
+
+.container-fluid{
+font-family: 'Montserrat', sans-serif;
+background-color: white;
+padding-top: 10px;
+padding-bottom: 20px;
+text-align: center;
+
+}
+
+.row h5{
+color:rgb(111,110,114);
+font-size: 0.9em;
+
+}
+
+.row a{
+text-decoration: none;
+color: rgb(111,110,114,0.9);
+font-size: 0.7em;
+font-weight: 100;
+
+}
+
+.row p{
+text-decoration: none;
+color: rgb(111,110,114,0.9);
+font-size: 0.7em;
+font-weight: 100;
+}
+
+.row a:hover{
+color: rgb(111,110,114);
+border-bottom: 0.1em solid rgb(111,110,114);
+}
+
+.footer-copyright{
+background-color: rgb(111,110,114); 
+color: white;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 0.6em;
+}
+
 
 /* profile */
 
 .bienvenido {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: bolder
+display: flex;
+flex-direction: row;
+justify-content: center;
+font-size: 2rem;
+font-weight: bolder
 }
 
 /* weekSale */
 .weekSale {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100vh;
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 100vh;
 }
 .left, .right {
-  width: 50%
+width: 50%
 }
 .left{
-  background-color: #FAD4E1; 
-  text-align: center;
-  background-image: url('../img/sillonWeekSALE.JPG');
-  background-position-x: right;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
+background-color: #FAD4E1; 
+text-align: center;
+background-image: url('../img/sillonWeekSALE.JPG');
+background-position-x: right;
+background-repeat: no-repeat;
+background-position-y: bottom;
+display: flex;
+flex-direction: column;
+justify-content: space-between
 
 }
 .right {
-  background-image: url('../img/instagramWeekSale.JPG');
-  background-position-x: center;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center
+background-image: url('../img/instagramWeekSale.JPG');
+background-position-x: center;
+background-repeat: no-repeat;
+background-position-y: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center
 }
 
 .wsTitle2{
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  animation-name: instagram;
-  animation-duration: 1s ;
-  animation-iteration-count: infinite;
+color: white;
+text-align: center;
+font-weight: 700;
+animation-name: instagram;
+animation-duration: 1s ;
+animation-iteration-count: infinite;
 }
 
 .wsSubtitle2{
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.7rem;
+color: white;
+text-align: center;
+text-transform: uppercase;
+font-size: 0.7rem;
 }
 
 .fa-instagram {
-  color: white;
+color: white;
 
 }
 #igIcon {
-  font-size: 1.5rem !important
+font-size: 1.5rem !important
 }
 .titleContainer {
-  background-color: grey;
-  align-content: center;
-  justify-content: center;
-  padding: 0.7rem
+background-color: grey;
+align-content: center;
+justify-content: center;
+padding: 0.7rem
 }
 
 
 .wsShop {
-    text-decoration: underline;
-    color: rgb(111,110,114,0.9);
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 1rem
+  text-decoration: underline;
+  color: rgb(111,110,114,0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
 
 }
 .top, .bottom{
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
+margin: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between
 }
 
 .wsShop:hover {
-  color: rgb(111, 110, 114, 0.5)
+color: rgb(111, 110, 114, 0.5)
 }
 
 .wsTitle{
-  font-weight: 700;
-  font-size: 4rem;
-  font-family: 'Abril Fatface', cursive;
-  letter-spacing: 0.3rem
+font-weight: 700;
+font-size: 4rem;
+font-family: 'Abril Fatface', cursive;
+letter-spacing: 0.3rem
 }
 
 .wsSubTitle{
-  font-size: 1rem;
-  text-transform: uppercase
+font-size: 1rem;
+text-transform: uppercase
 }
 
 .right{
-  background-color: gray
+background-color: gray
 }
 
 /* carrito */
 
 .principalcarrito {
-  background-color:#efefef80;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+background-color:#efefef80;
+text-align: center;
+display: flex;
+justify-content: center;
 
 }
 .seccion1carrito {
-  margin-top: 20px;
-  max-width: 1200px;
-  justify-content: center;
+margin-top: 20px;
+max-width: 1200px;
+justify-content: center;
 
 }
 .articulo1carrito {
-  margin: 10px;
-  overflow: hidden;
-  height: 30em;
+margin: 10px;
+overflow: hidden;
+height: 30em;
 }
 .img-articulo1carrito {
-  height: 15em;
+height: 15em;
 }
 .titulocarrito {
-  font-size: 5em;
-  color: #000; 
-  font-weight: bold;    
+font-size: 5em;
+color: #000; 
+font-weight: bold;    
 }
 .detallecarrito {
-  font-size: 0.7em;
-  color: #8b8e94;
-  font-weight: bold;
-  
+font-size: 0.7em;
+color: #8b8e94;
+font-weight: bold;
+
 }
 .preciocarrito {
-  font-size: 2em;
-  color: #FFA33E;
-  font-weight: bold;
+font-size: 2em;
+color: #FFA33E;
+font-weight: bold;
 }
+
 /*admin productos*/
+
+.abmTitle{
+color: #8092A1;
+font-family: 'Abril Fatface', cursive;
+padding-top: 1rem;
+}
 .adminProducts{
-  width: 100%;
-  background: #8092A1;
-  display: flex;
-  justify-content: center
+width: 100%;
+background: #8092A1;
+display: flex;
+justify-content: center
 }
 .adminProductsContainer{
-  background: white;
-  margin: 1rem;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center
+background: white;
+margin: 3.5rem;
+width: 90%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center
 }
 .productsBtns{
-  font-size: 1rem;
-  color: rgb(111,110,114);
-  margin-top: 2rem
+font-size: 1rem;
+color: rgb(111,110,114);
+margin-bottom: 1rem;
 }
 .productsBtns:hover {
-  color: rgba(111,110,114, 0.5)
+color: rgba(111,110,114, 0.5)
 }
 
 th, td {
-  text-align: center
+text-align: center;
+color: rgb(111,110,114);
+font-family: 'Roboto', sans-serif;
+
 }
-/*admin productos*/
 
 /* detalle producto */
+
 .detailTitle{
-  margin: 2rem
+margin: 1rem;
+font-family: 'Abril Fatface', cursive;
+font-size: 0.5rem;
+color:#FCCDAB;
 }
 .detailProduct {
-  display: flex;
-  width: 100%;
-  background-color: #FCCDAB;
-  justify-content: center;
-  align-content: center
+display: flex;
+width: 100%;
+background-color: #FCCDAB;
+justify-content: center;
+align-content: center
 }
 .detailContainer {
-  background: white;
-  margin: 1rem;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center
+background: white;
+margin: 3.5rem;
+width: 90%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center
 
 }
 
 .info{
-  display: flex;
-  flex-direction: row
+display: flex;
+flex-direction: row
 }
 .productImage, .productInfo {
-  width: 50%
+width: 50%;
+font-family: 'Roboto', sans-serif;
 }
 
-.backButton {
-  font-size: 2rem;
-  color: rgb(111,110,114);
-  margin-top: 2rem
+.detailTitle .backButton {
+font-size: 2rem;
+color: rgb(111,110,114);
+font-size: 1rem;
+font-family: 'Roboto', sans-serif;
 }
+
 .backButton:hover {
 
-  color: rgba(111,110,114, 0.5)
+color: rgba(111,110,114, 0.5)
 }
-
-/*detalle producto*/
 
 /*editar producto*/
+
 .editContainer{
-  background: white;
-  margin: 1rem;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center
+background: white;
+margin: 6rem;
+width: 40%;
+padding-top: 3rem;
+padding-bottom: 2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center
 }
 .editTitle {
-  background-color:rgb(111,110,114);
-  text-align: center;
-  width: 100%;
-  margin: 1rem
+text-align: center;
+width: 100%;
+margin: 1rem
 }
 
 .editar{
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 3rem;
-  letter-spacing: 0.2rem;
+font-family: 'Abril Fatface', cursive;
+color: #FCCDAB;
+font-size: 2rem;
+font-weight: bold;
+line-height: 3rem;
 }
+
+.editarNombre{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
 .btnContainer {
-  text-align: center;
-  margin: 0.8rem
+text-align: center;
+margin: 6rem
 }
 .btnSave{
-  border: 0;
-  background: rgb(111,110,114);
-  color: white;
-  padding: 0.7rem;
-  font-weight: 600;
-  font-size: 0.8rem;
+border: 0;
+background: rgb(111,110,114);
+color: white;
+margin-top: -5rem;
+padding: 0.7rem;
+font-weight: 600;
+font-size: 0.8rem;
 }
+
 .agregarContainer{
-  background: white;
-  margin: 1rem;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center
+background: white;
+margin: 1rem;
+width: 70%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center
 
 }
 .agregarProducto {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 
 }
 /*editar producto*/
 
 
 .green {
-  background: #85ad00; }
+background: #85ad00; }
 
 .blue {
-  background: #0076ad; }
+background: #0076ad; }
 
 .tooltip-inner {
-  padding: 1.3em; }
+padding: 1.3em; }
 
 @-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-            transform: scale(3); }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+0% {
+  opacity: 0;
+  -webkit-transform: scale(3);
+          transform: scale(3); }
+100% {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); } }
 
 @keyframes opacity {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-            transform: scale(3); }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+0% {
+  opacity: 0;
+  -webkit-transform: scale(3);
+          transform: scale(3); }
+100% {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); } }
 
-            
+          
 @keyframes instagram {
-  50% {
-    transform: scale(0.5);
-    opacity: 0.5
-  }
+50% {
+  transform: scale(0.5);
+  opacity: 0.5
+}
 }

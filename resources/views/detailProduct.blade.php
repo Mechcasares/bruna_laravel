@@ -3,7 +3,7 @@
 <main class="detailProduct">
   <div class="detailContainer">
   <div class="detailTitle">
-    <h1>DETALLE DE PRODUCTO</h1>
+    <h1>Detalle de Producto</h1>
   </div>  
 
   <div class="info">
