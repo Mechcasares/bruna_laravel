@@ -39,7 +39,6 @@
 
             <!-- Content -->
             <h5 class="text-uppercase font-weight-bold">SOBRE NOSOTROS</h5>
-            <a href="#">Nuestra Compañia</a> <br>
             <a href="#">Nosotros</a>
     </div>
     

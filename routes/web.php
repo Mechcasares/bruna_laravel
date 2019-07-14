@@ -44,3 +44,13 @@ Route::get('/deleteSales/{id}','AdminSaleController@delete');
 // Detalle Producto 
 Route::get('/detalleProducto/{id}','productController@show');
 
+
+//Nosotros
+Route::get('/nosotros', function(){
+    return view('nosotros');
+});
+
+//Contacto
+Route::get('/contacto', function(){
+    return view('contacto');
+});

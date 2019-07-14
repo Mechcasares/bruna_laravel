@@ -297,12 +297,14 @@ text-align: center;
 font-size: 1em;
 color: rgb(161, 159, 159);
 
+
 }
 
 .titulo-faqs {
-font-size: 1em;
+font-size: 1.5em;
 margin: 1em;
 color: grey;
+
 }
 
 .container-g {
@@ -328,7 +330,8 @@ height: 10%;
 }
 
 .lineh-g {
-width: 60%;
+width: 100%;
+padding-top: 1rem;
 }
 
 .endfaqs {
@@ -339,8 +342,9 @@ margin: 1em;
 
 
 .button-g {
-font-size: 1em;
-width: 40%;
+font-size: 0.8em;
+padding: 0.7rem;
+width: 20%;
 color: white;
 background-color: grey;
 }
@@ -500,6 +504,7 @@ text-transform: uppercase
 .right{
 background-color: gray
 }
+
 
 /* carrito */
 
@@ -687,6 +692,7 @@ display: flex;
 flex-direction: column;
 
 }
+
 /*editar producto*/
 
 
@@ -726,3 +732,132 @@ padding: 1.3em; }
   opacity: 0.5
 }
 }
+
+/* Nosotros */
+
+.imgNostros {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  }
+
+.tituloNosotros{
+  font-family: 'Abril Fatface', cursive;
+  color: #FCCDAB;
+  font-size: 3.5rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cuerpoNosotros h2{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+.cuerpoNosotros h3 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-bottom: 5rem;
+  font-size: 1rem;
+}
+
+.newsletter {
+  padding: 80px 0;
+  background: #efeee5;
+  }
+  
+.newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; 
+}
+
+.newsletter .content h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: rgb(111,110,114);
+  margin-bottom: 40px; 
+}
+
+.newsletter .content .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius:0;
+}
+
+.newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid rgb(111,110,114);
+  font-family: 'Roboto', sans-serif;
+}
+
+.newsletter .content .btn {
+  min-height: 50px; 
+  border-radius:0;
+  background: rgb(111,110,114);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Contactanos */
+
+
+#contacto{
+  background-color: #efeee5;
+  letter-spacing: 2px;
+  }
+  
+#contacto a{
+  color: rgb(111,110,114);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  
+}
+
+.contactoH2{
+  color:rgb(111,110,114);
+  font-family: 'Abril Fatface', cursive;
+}
+
+.btnContacto{
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(111,110,114);
+  color: white;
+  padding: 0.8rem;
+}
+
+
+@media (max-width: 500px) {
+
+  #contacto{padding-bottom: 300px;}
+  #contacto .maps iframe{
+    width: 100%;
+    height: 450px;
+  }
+ }
+
+
+@media (min-width: 576px) {
+
+  #contacto{padding-bottom: 500px;}
+   #contacto .maps iframe{
+     width: 100%;
+    
+   }
+ }
+
+@media (min-width: 768px) {
+
+  #contacto{padding-bottom: 500px;}
+  #contacto .maps iframe{
+    width: 100%;
+    height: 430px;
+  }
+}
+
+

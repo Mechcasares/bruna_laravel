@@ -7,8 +7,8 @@
                     <div class="links">
                         <a href="/">HOME</a>
                         <a href="/cart" class="products">PRODUCTOS</a>
-                        <a href="#">NOSOTROS</a>
-                        <a href="#">CONTACTO</a> 
+                        <a href="/nosotros">NOSOTROS</a>
+                        <a href="/contacto">CONTACTO</a> 
                       <!--   @if(auth()->user() && auth()->user()->role == 9)     
                         <a class="nav-link" href="/adminProducts">ADMIN</a>
                         @endif -->
