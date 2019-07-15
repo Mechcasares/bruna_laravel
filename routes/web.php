@@ -32,9 +32,7 @@ Route::patch('/editProduct/{id}', 'AdminProductController@update');
 
 // Compra Productos - Cart
 
-Route::get('/cart', function(){
-    return view('cart');
-});
+Route::get('/cart', 'cartController@index');
 
 Route::get('/Sales','AdminSaleController@index');
 Route::post('/saveSales','AdminSaleController@save');

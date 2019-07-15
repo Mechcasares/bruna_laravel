@@ -12,9 +12,9 @@ body {
     font-family: 'Montserrat', sans-serif;;
     font-size: 0.9em;
     color:rgb(111,110,114);
-    max-width: 1920px;
     background: white;
     margin: auto;
+    width: 100%
 }
 
 
@@ -93,7 +93,55 @@ body {
   }
 
   /*Footer*/
+.footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  background: white;
+  justify-content: space-around
+}
+.ayuda, .contacto, .nosotros{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem
+}
+.refTitle{
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.logo{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 10%
+}
+.logo img{
+  padding: 0
+}
 
+.ref{
+  text-decoration: none;
+  color: rgb(111,110,114,0.9);
+  font-size: 0.7em;
+  font-weight: 100;
+}
+
+.ref:hover{
+  color: rgb(111,110,114);
+  text-decoration: none;
+  border-bottom: 0.1em solid rgb(111,110,114);
+}
+
+.refP{
+  text-decoration: none;
+  color: rgb(111,110,114,0.9);
+  font-size: 0.7em;
+  font-weight: 100;
+  margin-bottom: 0
+}
 
 .container-fluid{
     font-family: 'Montserrat', sans-serif;
@@ -104,31 +152,8 @@ body {
     
 }
 
-.row h5{
-    color:rgb(111,110,114);
-    font-size: 0.9em;
 
-}
 
-.row a{
-    text-decoration: none;
-    color: rgb(111,110,114,0.9);
-    font-size: 0.7em;
-    font-weight: 100;
-
-}
-
-.row p{
-    text-decoration: none;
-    color: rgb(111,110,114,0.9);
-    font-size: 0.7em;
-    font-weight: 100;
-}
-
-.row a:hover{
-    color: rgb(111,110,114);
-    border-bottom: 0.1em solid rgb(111,110,114);
-}
 
 .footer-copyright{
     background-color: rgb(111,110,114); 
@@ -150,6 +175,8 @@ body {
   color: white;
   padding-left: 7.3rem;
   padding-right: 7.3rem;
+  position: fixed;
+  width: 100%
 }
 
 .show {
@@ -250,7 +277,6 @@ body {
     width: 95px;
     height: 95px;
     border-radius: 50%;
-    z-index: 9;
     background:  rgb(111,110,114);
     padding: 20px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -354,6 +380,9 @@ body {
   padding-bottom: 20px;
   text-align: center;
   
+}
+.row{
+  width: 100%
 }
 
 .row h5{
@@ -500,10 +529,39 @@ body {
 .right{
   background-color: gray
 }
+/*cart*/
+.cart{
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+}
+.row{
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+.product{
+  width: 30%;
+  margin: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.productTitle{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+}
+/*cart*/
 
 /* carrito */
 
-.principalcarrito {
+/* .principalcarrito {
   background-color:#efefef80;
   text-align: center;
   display: flex;
@@ -539,7 +597,7 @@ body {
   font-size: 2em;
   color: #FFA33E;
   font-weight: bold;
-}
+} */
 /*admin productos*/
 .adminProducts{
   width: 100%;
