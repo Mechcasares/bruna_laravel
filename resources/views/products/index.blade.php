@@ -2,8 +2,8 @@
 @section('content')
 <div class="adminProducts">
   <div class="adminProductsContainer">
-    <div class="detailTitle">
-    <h2>ABM DE PRODUCTOS</h2>
+    <div>
+    <h2 class= "abmTitle">ABM de Productos</h2>
     </div>
     <a class="productsBtns" href="/createProduct">AGREGAR PRODUCTO +</a>    
     <br>
@@ -12,9 +12,9 @@
             <tr>
                 <th>#</th>
                 <th>NOMBRE DEL PRODUCTO</th>
-                <th>VER</th>
-                <th>EDITAR</th>
-                <th>ELIMINAR</th>
+                <th class= "edit">VER</th>
+                <th class= "edit">EDITAR</th>
+                <th class= "edit">ELIMINAR</th>
             </tr>
         </thead>
         <tbody>

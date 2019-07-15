@@ -4,9 +4,10 @@
 <div class="detailProduct">
   <div class="editContainer">
     <div class="editTitle">
-      <h1 class="editar" >EDITAR PRODUCTO</h3>
+      <h1 class="editar" >Editar Producto:</h1>
+      <h2 class= "editarNombre">{{ $product->name }}</h2>
     </div>
-    <h2>{{ $product->name }}</h2>
+  
     @if (count($errors) > 0)
     <div class="alert alert-danger">
         <ul>
@@ -42,7 +43,7 @@
             @endforeach
         </select>
         </div>
-
+        
         <div class="btnContainer">
             <input type="submit" class="btnSave" value="CONFIRMAR CAMBIOS">
         </div>

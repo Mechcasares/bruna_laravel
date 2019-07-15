@@ -65,10 +65,11 @@
 
 
             <div class="pie">
-              <hr class="lineh-g" style="color: grey;" />
+              
 
               <h2 class="endfaqs">NO ENCONTRASTE LO QUE BUSCABAS?</h2>
               <button type="button" class="button-g">CONTACTATE CON NOSOTROS</button>
+              <hr class="lineh-g" style="color: grey;" />
             </div>
 
 </main>
