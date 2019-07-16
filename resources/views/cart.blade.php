@@ -12,10 +12,13 @@
       @if($product->photopath !== null)
       <img src="/storage/{{ $product->photopath }}" alt="photo">
       @endif
+      <br> <button type="button" href="/cart/add/{{ $movie->id }}">Agregar</button> 
     </div>
      </div>
       
      
+
+
   @endforeach
 </div>
 </main>
