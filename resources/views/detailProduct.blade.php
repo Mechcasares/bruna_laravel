@@ -9,7 +9,7 @@
   <div class="info">
     <div class="productImage">
       @if($detail->photopath !== null)
-      <img src="storage/{{ $detail->photopath }}" alt="pp">
+      <img src="/storage/{{ $detail->photopath }}" alt="photo">
       @endif
     </div>
     <div class="productInfo">

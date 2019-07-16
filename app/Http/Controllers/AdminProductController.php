@@ -33,7 +33,7 @@ class AdminProductController extends Controller
         ];
 
         $this->validate($request,$reglas,$mensajes);
-        $photopath = $request->file('photopath')->store('img', 'public');
+        $photopath = $request->file('photopath')->store('fotos', 'public');
         $product = new Product($request->all());
 
 

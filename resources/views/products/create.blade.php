@@ -44,15 +44,16 @@
                     </select>
                 </div>
                 <div class="form-group col-4 offset-4">
-                    <label for="img">Imagen</label>
+                    <label for="fotos">Imagen</label>
                     <input class="form-control" type="file" name="photopath">
                 </div>
                 
             </div>
-            </form>
+            
             <div class="btnContainer">
                     <input type="submit" class="btnSave" value="Agregar Producto">
-                </div>
+             </div>
+         </form>
 
           </div>
       </article>
