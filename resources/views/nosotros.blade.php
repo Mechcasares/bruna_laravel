@@ -28,7 +28,7 @@
     <section class="newsletter">
 
 	    <div class="content">
-		    <h2>Subscibite a nuestro Newsletter</h2>
+		    <h2>Subscribite a nuestro Newsletter</h2>
 	      <div class="input-group">
           <input type="email" class="form-control" placeholder="Ingresá tu mail">
           <span class="input-group-btn">
