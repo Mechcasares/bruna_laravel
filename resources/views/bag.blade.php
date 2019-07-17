@@ -12,7 +12,8 @@
     </div>
   </div>
   @endforeach
-  <div id="totalCarrito">Total = </div>
-
+  <div class="finalizarLaCompra">
+    <h2 class="total">TOTAL: ${{$producto['precio']}}</h2>
+  </div>
 </div>
 @endsection

@@ -15,6 +15,23 @@ class cartController extends Controller
      return view('cart')->with('products', $products);
    }
 
+   public function mesas(){
+    $products = Product::all();
+    return view('cartMesas')->with('products', $products);
+   }
+   public function sillas(){
+    $products = Product::all();
+    return view('cartSillas')->with('products', $products);
+   }
+   public function sillones(){
+    $products = Product::all();
+    return view('cartSillones')->with('products', $products);
+   }
+   public function accesorios(){
+    $products = Product::all();
+    return view('cartAccesorios')->with('products', $products);
+   }
+
     public function listProduct ()
     {
         $products = session('cart')['products'];

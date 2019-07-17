@@ -44,7 +44,7 @@
             @csrf
             </form>
             @endguest
-  <!--       </article> -->
+  <!--</article> -->
        
     </section>
 
@@ -52,9 +52,9 @@
 </section>
 <div class="dropdown">
   <div class="openMenu" id="menu">
-    <div id="menuOption"class="sillones"><p class="menuOptionP">SILLONES</p></div>
-    <div id="menuOption"class="sillas"><p class="menuOptionP">SILLAS</p></div>
-    <div id="menuOption"class="mesas"><p class="menuOptionP">MESAS</p></div>
-    <div id="menuOption"class="acces"><p class="menuOptionP">ACCESORIOS</p></div>
+    <div id="menuOption"class="sillones"><a href="/sillones" class="aBag"><p class="menuOptionP">SILLONES</p></a></div>
+    <div id="menuOption"class="sillas"><a href="/sillas" class="aBag"><p class="menuOptionP">SILLAS</p></a></div>
+    <div id="menuOption"class="mesas"><a href="/mesas" class="aBag"><p class="menuOptionP">MESAS</p></a></div>
+    <div id="menuOption"class="acces"><a href="/accesorios" class="aBag"><p class="menuOptionP">ACCESORIOS</p></a></div>
   </div>
 </div>

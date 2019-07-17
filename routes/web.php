@@ -33,6 +33,11 @@ Route::patch('/editProduct/{id}', 'AdminProductController@update');
 // Compra Productos - Cart
 
 Route::get('/cart', 'cartController@index');
+Route::get('/mesas', 'cartController@mesas');
+Route::get('/sillas', 'cartController@sillas');
+Route::get('/sillones', 'cartController@sillones');
+Route::get('/accesorios', 'cartController@accesorios');
+
 
 Route::get('/Sales','AdminSaleController@index');
 Route::post('/saveSales','AdminSaleController@save');
@@ -54,11 +59,6 @@ Route::get('/contacto', function(){
     return view('contacto');
 });
 
-
-//Category
-Route::get('/category', function(){
-    return view('category');
-});
 
 //Cart Logic
 

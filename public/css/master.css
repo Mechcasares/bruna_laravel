@@ -78,6 +78,11 @@ height: 100%;
 
 }
 
+.finalizarLaCompra{
+  width: 100%;
+  background: rgb(111,110,114)
+}
+
 .aBag:hover {
   text-decoration: none;
   color: white
@@ -961,6 +966,11 @@ padding: 1.3em; }
 
 }
 
+.categoryFilter{
+  display: flex;
+  flex-direction: row
+}
+
 /*carrito*/
 .mainBag{
   padding: 1rem
@@ -971,7 +981,11 @@ padding: 1.3em; }
 }
 
 
-
+.total{
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.5rem
+}
 
 @media (max-width: 500px) {
 
