@@ -16,3 +16,16 @@
     </div>
   </div>
 </div>
+<div class="responsive">
+  <div class="catalogoResponsive">
+    <a class="catalogoResponsive"href="/cart">PRODUCTOS</a>
+  </div>
+  <div class="nosotrosResponsive">
+    <a class="nosotrosResponsive"href="/nosotros">  NOSOTROS</a>
+  
+  </div>
+  <div class="contactoResponsive">
+    <a class="contactoResponsive" href="/contacto">CONTACTO</a>
+  </div>
+
+</div>

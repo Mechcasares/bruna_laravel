@@ -44,7 +44,7 @@
                     </select>
                 </div>
                 <div class="form-group col-4 offset-4">
-                    <label for="fotos">Imagen</label>
+                    <label for="img">Imagen</label>
                     <input class="form-control" type="file" name="photopath">
                 </div>
                 

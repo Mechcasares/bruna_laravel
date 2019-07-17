@@ -19,6 +19,14 @@ body {
 
 
 /*Navbar*/
+.aFAQS{
+  text-decoration: none;
+  color:white
+}
+.aFAQS:hover{
+  text-decoration: none;
+  color: white
+}
 
 .container {
   display: flex;
@@ -84,21 +92,14 @@ height: 100%;
   color: rgb(111,110,114,0.5);
 }
 
-@media only screen and (max-width: 800px) {
-  .navbarright {
-    display: none
-  }
-  .icon-bar {
-    display: none
-  }
-}
+
 
   /*Footer*/
 .footer{
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 20vh;
+/*   height: 20vh; */
   background: white;
   justify-content: space-around
 }
@@ -284,7 +285,7 @@ color: white
 .form-control, .btn {        
   border-radius: 2px;
 }
-.login-form {
+.login-form, .register-form {
   width: 350px;
   margin: 0 auto;
   padding: 100px 0 30px;		
@@ -404,7 +405,7 @@ margin: 1em;
 .button-g {
 font-size: 0.8em;
 padding: 0.7rem;
-width: 20%;
+width: 40%;
 color: white;
 background-color: grey;
 }
@@ -567,18 +568,55 @@ text-transform: uppercase
 .right{
 background-color: gray
 }
+
+.responsive {
+  display: none;
+
+}
+
+.catalogoResponsive, .nosotrosResponsive, .contactoResponsive {
+  width: 100;
+  height: 10vh;
+  font-family: 'Abril Fatface', cursive;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.catalogoResponsive{
+  background-color: #FFA792;
+  letter-spacing: 1rem
+  
+}
+.contactoResponsive{
+  background-color: #8092A1;
+  letter-spacing: 1rem
+
+
+}
+.nosotrosResponsive{
+  background-color: #1A3E4A;
+  letter-spacing: 1rem
+
+
+}
 /*cart*/
 .cart{
  width: 100%;
  display: flex;
  flex-direction: row;
+ justify-content: center
+}
+.productDetail{
+  text-align: center
 }
 .row{
   width: 100%;
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
+  justify-content: center   
 }
 .product{
   width: 30%;
@@ -595,49 +633,6 @@ background-color: gray
   letter-spacing: 6px;
   text-transform: uppercase
 }
-/*cart*/
-
-
-/* carrito */
-
-/* .principalcarrito {
-  background-color:#efefef80;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-
-}
-.seccion1carrito {
-margin-top: 20px;
-max-width: 1200px;
-justify-content: center;
-
-}
-.articulo1carrito {
-margin: 10px;
-overflow: hidden;
-height: 30em;
-}
-.img-articulo1carrito {
-height: 15em;
-}
-.titulocarrito {
-font-size: 5em;
-color: #000; 
-font-weight: bold;    
-}
-.detallecarrito {
-font-size: 0.7em;
-color: #8b8e94;
-font-weight: bold;
-
-}
-.preciocarrito {
-  font-size: 2em;
-  color: #FFA33E;
-  font-weight: bold;
-} */
-/*admin productos*/
 
 .abmTitle{
 color: #8092A1;
@@ -897,14 +892,30 @@ padding: 1.3em; }
 }
 
 /* Contactanos */
+.contactoMain{
 
+}
+.contactoContainer {
+  display: flex;
+  flex-direction: row
+}
 
-#contacto{
-  background-color: #efeee5;
-  letter-spacing: 2px;
-  }
+.contactoMapa{
+  width: 50%
+}
+.mapa{
+  width: 100%;
+  height: 100%;
+}
+.contactoForm{
+  width:50%;
+  background: rgb(111,110,114);
+}
+.infoDeContacto {
+  padding: 1rem
+}
   
-#contacto a{
+.contactoMain a{
   color: rgb(111,110,114);
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -912,8 +923,10 @@ padding: 1.3em; }
 }
 
 .contactoH2{
-  color:rgb(111,110,114);
+  color:white;
+  text-align: center;
   font-family: 'Abril Fatface', cursive;
+  margin: 1rem
 }
 
 .btnContacto{
@@ -928,8 +941,7 @@ padding: 1.3em; }
 
 @media (max-width: 500px) {
 
-  #contacto{padding-bottom: 300px;}
-  #contacto .maps iframe{
+  .contactoMain .maps iframe{
     width: 100%;
     height: 450px;
   }
@@ -937,8 +949,6 @@ padding: 1.3em; }
 
 
 @media (min-width: 576px) {
-
-  #contacto{padding-bottom: 500px;}
    #contacto .maps iframe{
      width: 100%;
     
@@ -946,12 +956,57 @@ padding: 1.3em; }
  }
 
 @media (min-width: 768px) {
-
-  #contacto{padding-bottom: 500px;}
   #contacto .maps iframe{
     width: 100%;
     height: 430px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .navbarright {
+    display: none
+  }
+  .weekSale {
+    display: none
+  }
+  .logoB{
+    display: none
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column
+  }
+  .responsive{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+  }
+  .product{
+    width: 70%;
+    margin: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  .contactoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+  .contactoMapa{
+    width: 100%
+  
+  }
+  .contactoForm{
+    width:100%
+  }
+  .login-form, .register-form {
+    margin: 0 auto;
+    padding: 100px 0 30px;		
+}
+}
+
 
 

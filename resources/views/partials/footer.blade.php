@@ -17,14 +17,11 @@
     <div class="nosotros">
       <h5 class="refTitle">SOBRE NOSOTROS</h5>
       <a class="ref" href="#">Nuestra Compañia</a> 
-      <a class="ref" href="#">Nosotros</a>
+      <a class="ref" href="/nosotros">Nosotros</a>
       <a class="ref" href="#">Ideas Lab</a>
     </div>
     <div class="logo">
-      <img src="./img/BASE.png"  alt="">
-<!--  <img src="./img/raya1.png" alt="">
-      <img src="./img/raya2.png" alt=""> -->
-
+      <img src="./img/BASE.png"  class="logoB"alt="">
     </div>
   </div>
   <div class="footer-copyright">

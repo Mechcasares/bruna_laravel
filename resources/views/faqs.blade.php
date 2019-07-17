@@ -68,7 +68,7 @@
               
 
               <h2 class="endfaqs">NO ENCONTRASTE LO QUE BUSCABAS?</h2>
-              <button type="button" class="button-g">CONTACTATE CON NOSOTROS</button>
+              <button type="button" class="button-g"><a class="aFAQS"href="/contacto">CONTACTATE</a></button>
               <hr class="lineh-g" style="color: grey;" />
             </div>
 
