@@ -39,6 +39,7 @@ Route::post('/saveSales','AdminSaleController@save');
 Route::get('/deleteSales/{id}','AdminSaleController@delete');
 
 
+
 // Detalle Producto 
 Route::get('/detalleProducto/{id}','productController@show');
 
@@ -51,4 +52,30 @@ Route::get('/nosotros', function(){
 //Contacto
 Route::get('/contacto', function(){
     return view('contacto');
+});
+
+
+//Category
+Route::get('/category', function(){
+    return view('category');
+});
+
+//Cart Logic
+
+Route::group(['prefix' => 'cart'], function() {
+    Route::get('/', 'CartController@index');
+    Route::get('/add/{product_id}', 'CartController@add');
+
+    Route::get('/checkout', 'CartController@checkout');
+    Route::get('/flush', 'CartController@flush');
+});
+
+
+
+
+
+
+//Bag
+Route::get('/bag', function(){
+    return view('bag');
 });
