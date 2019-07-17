@@ -28,7 +28,20 @@
             @if(auth()->user() && auth()->user()->role == 9)     
             <a href="/adminProducts"><i class="fa fa-wrench"></i></a>
             @endif
-            <a href="#"><i class="fa fa-shopping-cart"></i></a>            
+
+
+            <!-- <a href="/cart"><i class="fa fa-shopping-cart" ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})></i></a>             -->
+            
+            <li class="nav-item o_navlinks">
+                    <a class="nav-link o_links" href={{url('/bag')}}>
+                        <i class="fa fa-shopping-cart"></i>
+                        ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})
+                    </a>
+            </li>
+            
+            
+            
+            
             @guest
             <a href="/login"><i class="fa fa-user"></i></a>
             @else

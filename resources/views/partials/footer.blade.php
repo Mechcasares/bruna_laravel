@@ -21,7 +21,7 @@
       <a class="ref" href="#">Ideas Lab</a>
     </div>
     <div class="logo">
-      <img src="./img/BASE.png"  alt="">
+      <img src="/img/BASE.png"  alt="">
 <!--  <img src="./img/raya1.png" alt="">
       <img src="./img/raya2.png" alt=""> -->
 
