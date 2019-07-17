@@ -1059,6 +1059,12 @@ padding: 1.3em; }
   flex-direction: column;
   align-items:center
 }
+.productBag{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
 }
 
 
