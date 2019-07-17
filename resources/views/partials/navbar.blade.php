@@ -31,7 +31,7 @@
             <!-- <a href="/cart"><i class="fa fa-shopping-cart" ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})></i></a>--> 
                     <a  class="aBag"href={{url('/bag')}}>
                         <i class="fa fa-shopping-cart"></i>
-                        ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})
+                        <div class="productBubble">{{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }}</div>
                     </a>
             @guest
               <a href="/login"><i class="fa fa-user"></i></a>

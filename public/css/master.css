@@ -73,12 +73,14 @@ height: 100%;
 }
 .aBag {
   text-decoration: none;
-  color: rgb(111,110,114)
+  color: white;
+  font-size: 1rem
+
 }
 
 .aBag:hover {
   text-decoration: none;
-  color: rgb(111,110,114)
+  color: white
 }
 
 .links a:hover {
@@ -947,6 +949,28 @@ padding: 1.3em; }
   color: white;
   padding: 0.8rem;
 }
+
+.productBubble{
+  background: rgb(111,110,114);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: -55px;
+  margin-left: 22px;
+
+}
+
+/*carrito*/
+.mainBag{
+  padding: 1rem
+}
+.productBag{
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 
 @media (max-width: 500px) {
