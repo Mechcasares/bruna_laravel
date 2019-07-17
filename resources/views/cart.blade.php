@@ -12,17 +12,10 @@
        <h6 class="productDetail"> {{$product -> description}}</h6>
        <p>$ {{$product -> price}}</p>
        <div class="productImage">
-<<<<<<< HEAD
-     
-=======
-      @if($product->photopath !== null)
-      <img src="/storage/{{ $product->photopath }}" alt="photo">
-      @endif
+       <a href="{{url('cart/add/' . $product->id)}}">Agregar</a> 
 
-      <br> <a href="{{url('cart/add/' . $product->id)}}">Agregar</a> 
       
     
->>>>>>> 0d871fefbf75a35f2ab762512b6e222ff9bf0a20
     </div>
      </div>
   @endforeach

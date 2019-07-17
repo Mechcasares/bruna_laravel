@@ -71,12 +71,23 @@ height: 100%;
   border-bottom: 2px solid rgb(111,110,114);
   font-weight: 300;
 }
+.aBag {
+  text-decoration: none;
+  color: rgb(111,110,114)
+}
+
+.aBag:hover {
+  text-decoration: none;
+  color: rgb(111,110,114)
+}
 
 .links a:hover {
   color: #B6B6B6;
 }
 
 .icon-bar {
+  display: flex;
+  flex-direction: row;
  justify-content: center;
 }
 

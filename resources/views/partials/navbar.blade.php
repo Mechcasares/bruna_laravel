@@ -22,28 +22,19 @@
     </section>
 
     <section class="icon-bar">
-        <article class="col-12 col-md-12 col-lg-12 text-right">
+        <!-- <article class="col-12 col-md-12 col-lg-12 text-right"> -->
             <a href="#"><i class="fa fa-heart"></i></a>
             <a href="#"><i class="fa fa-search"></i></a> 
             @if(auth()->user() && auth()->user()->role == 9)     
             <a href="/adminProducts"><i class="fa fa-wrench"></i></a>
             @endif
-
-
-            <!-- <a href="/cart"><i class="fa fa-shopping-cart" ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})></i></a>             -->
-            
-            <li class="nav-item o_navlinks">
-                    <a class="nav-link o_links" href={{url('/bag')}}>
+            <!-- <a href="/cart"><i class="fa fa-shopping-cart" ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})></i></a>--> 
+                    <a  class="aBag"href={{url('/bag')}}>
                         <i class="fa fa-shopping-cart"></i>
                         ({{ isset(session('cart')['products']) ? count(session('cart')['products']) : 0 }})
                     </a>
-            </li>
-            
-            
-            
-            
             @guest
-            <a href="/login"><i class="fa fa-user"></i></a>
+              <a href="/login"><i class="fa fa-user"></i></a>
             @else
             <a href="{{ route('logout') }}"
                     onclick="event.preventDefault();
@@ -53,7 +44,7 @@
             @csrf
             </form>
             @endguest
-        </article>
+  <!--       </article> -->
        
     </section>
 

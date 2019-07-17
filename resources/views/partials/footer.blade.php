@@ -21,14 +21,7 @@
       <a class="ref" href="#">Ideas Lab</a>
     </div>
     <div class="logo">
-<<<<<<< HEAD
       <img src="./img/BASE.png"  class="logoB"alt="">
-=======
-      <img src="/img/BASE.png"  alt="">
-<!--  <img src="./img/raya1.png" alt="">
-      <img src="./img/raya2.png" alt=""> -->
-
->>>>>>> 0d871fefbf75a35f2ab762512b6e222ff9bf0a20
     </div>
   </div>
   <div class="footer-copyright">
